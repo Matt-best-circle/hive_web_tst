@@ -1,15 +1,15 @@
 <html>
     <head>
 		<script type="module">
-			import init, * as bindings from './hive_simul-3533897cceaa6aba.js';
-			const wasm = await init({ module_or_path: './hive_simul-3533897cceaa6aba_bg.wasm' });
+			import init, * as bindings from './hive_simul-110993b4394c73b8.js';
+			const wasm = await init({ module_or_path: './hive_simul-110993b4394c73b8_bg.wasm' });
 
 			window.wasmBindings = bindings;
 
 			dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 		</script>
-		<link rel="modulepreload" href="hive_simul-3533897cceaa6aba.js" crossorigin="anonymous" integrity="sha384-m895/1pUYoXViHDKgnBTFVQQzgZhWmGxRY7OPgO/IQRBGLsTCkq4pn9qPAefvUBa">
-		<link rel="preload" href="hive_simul-3533897cceaa6aba_bg.wasm" crossorigin="anonymous" integrity="sha384-XZjZyn4DspbUzjjZ6iFT9/Nb4HiSCbXKRiWPJQNh8mQQHVXbLm4e2QaIVlhkx7XE" as="fetch" type="application/wasm">
+		<link rel="modulepreload" href="hive_simul-110993b4394c73b8.js" crossorigin="anonymous" integrity="sha384-m895/1pUYoXViHDKgnBTFVQQzgZhWmGxRY7OPgO/IQRBGLsTCkq4pn9qPAefvUBa">
+		<link rel="preload" href="hive_simul-110993b4394c73b8_bg.wasm" crossorigin="anonymous" integrity="sha384-h3vcJE76iukkybIqrIky+ULhbLTs17V0ECRY0/E/G1uCTv733gtdyOmeA1MbHu9Z" as="fetch" type="application/wasm">
 	</head>
 	<body style="margin: 0;">
 		<canvas id="cv" style="width:100%; height:100%; display: block;"> </canvas>
